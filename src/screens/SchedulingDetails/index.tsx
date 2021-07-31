@@ -3,6 +3,7 @@ import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useTheme } from 'styled-components';
 import { useNavigation } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
@@ -52,6 +53,11 @@ export function SchedulingDetails() {
   
   return (
    <Container>
+        <StatusBar 
+          barStyle="dark-content"
+          backgroundColor="transparent"
+          translucent
+      />
      <Header>
        <BackButton onPress={() => {}} />
      </Header>

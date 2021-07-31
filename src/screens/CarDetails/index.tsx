@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
@@ -30,7 +31,6 @@ import {
  Footer
 } from './styles';
 
-
 export function CarDetails() {
   const navigation = useNavigation();
 
@@ -40,6 +40,11 @@ export function CarDetails() {
   
   return (
    <Container>
+     <StatusBar 
+        barStyle="dark-content"
+        backgroundColor="transparent"
+        translucent
+     />
      <Header>
        <BackButton onPress={() => {}} />
      </Header>
