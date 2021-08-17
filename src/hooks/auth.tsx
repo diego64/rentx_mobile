@@ -45,7 +45,11 @@ function AuthProvider({ children }: AuthProviderProps) {
             password
         });
 
-        console.log(response.data);
+        const { token, user } = response.data;
+
+        api.defaults.headers.authorization = `Bearer ${token}`;
+
+        setData({ token, user });
     }
 
     return (
@@ -66,4 +70,4 @@ function useAuth(): AuthContextData {
     return context
 }
 
-export { AuthProvider, useAuth }
+export { AuthProvider, useAuth };

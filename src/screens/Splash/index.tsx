@@ -18,7 +18,6 @@ import {
  Container
 } from './styles';
 
-
 export function Splash() {
   const navigation = useNavigation();
 
@@ -55,7 +54,7 @@ export function Splash() {
   });
 
   function startApp() {
-    navigation.navigate('Home');
+    navigation.navigate('SignIn');
   }
 
   useEffect(() => {

@@ -1,4 +1,3 @@
-/*
 import React, { ReactNode } from 'react';
 
 import { AuthProvider } from './auth';
@@ -16,4 +15,3 @@ function AppProvider({ children }: AppProviderProps) {
 }
 
 export { AppProvider };
-*/
